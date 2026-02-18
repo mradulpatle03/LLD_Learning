@@ -13,7 +13,7 @@ class HeadphonesAdapter : public IAudioOutputDevice {
         HeadphonesAdapter(HeadphonesAPI* headphonesAPI) {
             this->headphonesAPI = headphonesAPI;
         }
-        void playSong(Song* song) {
+        void playAudio(Song* song) override {
             headphonesAPI->playSongViaJack(song->getTitle());
         }
 };

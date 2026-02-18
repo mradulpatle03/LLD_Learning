@@ -14,7 +14,7 @@ public:
         this->bluetoothSpeakerAPI = bluetoothSpeakerAPI;
     }
 
-    void playAudio(Song* song) {
+    void playAudio(Song* song) override {
         bluetoothSpeakerAPI->playSoundViaBluetooth(song->getTitle());
     }
 };

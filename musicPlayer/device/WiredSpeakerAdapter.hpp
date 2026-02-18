@@ -12,7 +12,7 @@ public:
     WiredSpeakerAdapter(WiredSpeakerAPI* wiredSpeakerAPI) {
         this->wiredSpeakerAPI = wiredSpeakerAPI;
     }
-    void playAudio(Song* song) {
-        wiredSpeakerAPI->playSong(song->getTitle());
+    void playAudio(Song* song) override {
+        wiredSpeakerAPI->playSongViaWiredSpeaker(song->getTitle());
     }
 };

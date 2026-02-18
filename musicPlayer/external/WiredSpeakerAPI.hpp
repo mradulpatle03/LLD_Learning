@@ -5,7 +5,7 @@ using namespace std;
 
 class WiredSpeakerAPI {
     public:
-        void playSong(const string& songName) {
+        void playSongViaWiredSpeaker(const string& songName) {
             cout<<"Playing song on wired speaker: "<<songName<<endl;
         }
 };

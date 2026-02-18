@@ -5,7 +5,7 @@ using namespace std;
 
 class HeadphonesAPI {
 public:
-    void playSongViaJack(string songName) {
+    void playSongViaJack(const string& songName) {
         cout << "Playing " << songName << " on Headphones" << endl;
     }
 };
