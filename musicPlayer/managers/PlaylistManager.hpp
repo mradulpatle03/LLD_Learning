@@ -39,3 +39,5 @@ class PlaylistManager{
             }
         }
 };
+
+PlaylistManager* PlaylistManager::instance = nullptr;

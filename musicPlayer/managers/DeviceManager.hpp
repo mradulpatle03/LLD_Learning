@@ -34,7 +34,7 @@ class DeviceManager {
                 cout << "Connected to bluetooth speaker" << endl;
             }
         }
-        IAudioOutputDevice* getCurrentDevice() {
+        IAudioOutputDevice* getOutputDevice() {
             return currentDevice;
         }
         bool hasOutputDevice() {
